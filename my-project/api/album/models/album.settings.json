@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "albums",
+  "info": {
+    "name": "Album"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name_Album": {
+      "type": "string"
+    },
+    "Number_Album": {
+      "type": "biginteger"
+    },
+    "album": {
+      "via": "band",
+      "model": "band"
+    },
+    "albums": {
+      "via": "song",
+      "collection": "song"
+    }
+  }
+}

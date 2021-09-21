@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bands",
+  "info": {
+    "name": "Band",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name_Band": {
+      "type": "string"
+    },
+    "Type_Band": {
+      "type": "string"
+    },
+    "band": {
+      "collection": "album",
+      "via": "album"
+    }
+  }
+}
